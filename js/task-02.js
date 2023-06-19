@@ -15,22 +15,29 @@ const ingredients = [
   'Condiments',
 ];
 
+// ВАРІАНТ 1
+// const listIngredients = document.querySelector('#ingredients');
 
-const listIngredients = document.querySelector('#ingredients');
+// const makeListIngredients = (ingredients) => {
+//   return ingredients.map(ingredient => {
+//     const ingredientEl = document.createElement('li');
+//     ingredientEl.textContent = ingredient;
+//     ingredientEl.classList.add("item");
+//     return ingredientEl;
+//   });
+// }
 
-const makeListIngredients = (ingredients) => {
-  return ingredients.map(ingredient => {
-    const ingredientEl = document.createElement('li');
-    ingredientEl.textContent = ingredient;
-    ingredientEl.classList.add("item");
-    return ingredientEl;
-  });
-}
+// const createListIngredients = makeListIngredients(ingredients);
 
-const createListIngredients = makeListIngredients(ingredients);
-
-listIngredients.append(...createListIngredients)
+// listIngredients.append(...createListIngredients)
 
 
+// ВАРІАНТ2
 
+document.querySelector('#ingredients').append(...(ingredients.map(ingredient => {
+      const ingredientEl = document.createElement('li');
+      ingredientEl.textContent = ingredient;
+      ingredientEl.classList.add("item");
+      return ingredientEl;
+    })))
 
