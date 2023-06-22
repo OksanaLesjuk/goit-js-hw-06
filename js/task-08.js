@@ -21,6 +21,7 @@ function onUserSubmit (evt){
       if (email.value === "" || password.value === ""){
         alert('Всі поля повинні бути заповнені!');
       } else {
-      console.log(`Email: ${email.value}, Password: ${password.value}`)
+        const userData = {email: email.value, password: password.value};
+      console.log(userData)
       evt.currentTarget.reset()}
 }
