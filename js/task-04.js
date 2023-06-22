@@ -26,7 +26,7 @@ containerCounter.addEventListener('click', onClick)
 
 //ВАРІАНТ 2
 function onClick(evt) {
-    
+
     counterValue += evt.target.dataset.action === "increment" ? 1 : -1;
     resultCounter.textContent = counterValue;
 }

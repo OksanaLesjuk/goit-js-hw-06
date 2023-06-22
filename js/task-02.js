@@ -35,9 +35,9 @@ const ingredients = [
 // ВАРІАНТ2
 
 document.querySelector('#ingredients').append(...(ingredients.map(ingredient => {
-      const ingredientEl = document.createElement('li');
-      ingredientEl.textContent = ingredient;
-      ingredientEl.classList.add("item");
-      return ingredientEl;
-    })))
+  const ingredientEl = document.createElement('li');
+  ingredientEl.textContent = ingredient;
+  ingredientEl.classList.add("item");
+  return ingredientEl;
+})))
 

@@ -12,16 +12,17 @@ console.dir(userForm);
 
 userForm.addEventListener('submit', onUserSubmit)
 
-function onUserSubmit (evt){
-    evt.preventDefault();
-    const {
-        elements: { email, password }
-      } = evt.currentTarget;
+function onUserSubmit(evt) {
+  evt.preventDefault();
+  const {
+    elements: { email, password }
+  } = evt.currentTarget;
 
-      if (email.value === "" || password.value === ""){
-        alert('Всі поля повинні бути заповнені!');
-      } else {
-        const userData = {email: email.value, password: password.value};
-      console.log(userData)
-      evt.currentTarget.reset()}
+  if (email.value === "" || password.value === "") {
+    alert('Всі поля повинні бути заповнені!');
+  } else {
+    const userData = { email: email.value, password: password.value };
+    console.log(userData)
+    evt.currentTarget.reset()
+  }
 }

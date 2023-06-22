@@ -21,6 +21,6 @@ function onBlurInput(evt) {
         input.classList.add('valid');
     } else {
         input.classList.add('invalid')
-    }  
+    }
 }
 

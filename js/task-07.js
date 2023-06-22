@@ -10,6 +10,6 @@ rangeInput.value = rangeInput.getAttribute('min');
 rangeInput.addEventListener('input', onRangeInput);
 
 function onRangeInput(evt) {
-textOutput.style.fontSize = `${evt.currentTarget.valueAsNumber}px`;
+    textOutput.style.fontSize = `${evt.currentTarget.valueAsNumber}px`;
 
 }
