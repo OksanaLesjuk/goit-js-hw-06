@@ -9,5 +9,7 @@ const textOutput = document.querySelector("#name-output");
 textInput.addEventListener('input', onInput);
 
 function onInput(evt){
-    evt.currentTarget.value.length > 0 ? textOutput.textContent = evt.currentTarget.value  : textOutput.textContent ='Anonymous';
+    const userName = evt.currentTarget.value.trim();
+    
+    userName.length > 0 ? textOutput.textContent = userName  : textOutput.textContent ='Anonymous';
 }
